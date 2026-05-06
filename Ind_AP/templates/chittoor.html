@@ -15,6 +15,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
         <a class="navbar-brand" href="#">Chittoor</a>
+
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -33,7 +34,10 @@
 <div class="text-white text-center p-5" 
      style="background:url('images/tirupati.jpg') center/cover; height:400px;">
     <div class="bg-dark bg-opacity-50 p-5 rounded">
-        <h1 class="display-4">Welcome to Chittoor</h1>
+        <h1 class="display-4">Welcome to Chittoor {{name}}</h1>
+        <p> Age : {{age}}</p>
+        {%if age > 18 %}
+        <h2> You are eligible for vote </h2>
         <p class="lead">Spiritual & Scenic Destination</p>
     </div>
 </div>
